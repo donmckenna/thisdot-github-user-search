@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+* { box-sizing:border-box; }
+body {
+  padding: 54px 64px;
+  color:#fff;
+  font-family:'Nunito', sans-serif;
+  background:rgba(0,0,0,0.9);
+}
+
+
+input[type="text"] {
+  padding:12px;
+  color:#fff;
+  font-family:'Roboto Mono', sans-serif;
+  font-size:16px;
+  border:solid 1px rgba(255,255,255,0.1);
+  border-radius:4px;
+  background:rgba(0,0,0,0.3);
+}
+
+button {
+  margin-right:2px;
+  padding:8px 12px;
+  color:rgba(255,255,255,0.4);
+  font-family:'Roboto Mono', sans-serif;
+  font-weight:800;
+  border:none;
+  border-radius:3px;
+  border:solid 1px rgba(0,0,0,0.6);
+  background:rgba(0,0,0,0.3);
+  outline:none;
+  cursor:pointer;
+  &:hover {
+    color:rgba(255,255,255,0.8);
+    background:rgba(0,0,0,0.1);
+  }
+  &.active {
+    color:#fff;
+    background:rgba(255,255,255,0.08);
+  }
+  &.search {
+    margin-left:12px;
+    padding:12px 18px;
+  }
+}
