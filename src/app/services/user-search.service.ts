@@ -58,7 +58,7 @@ export class UserSearchService {
    * @param page Desired page number.
    * @param per_page Search items per page.
    */
-  byName(q: string, page = 1, per_page = 12): Observable<any> {
+  byName(q: string, page = 1, per_page = 5): Observable<any> {
     // store current params for later use
     this.currentParams = { q, page, per_page };
     // HttpParams require strings, not numbers
