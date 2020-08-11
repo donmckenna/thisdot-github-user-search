@@ -30,5 +30,10 @@ import { Component, Input } from '@angular/core';
 export class UserListComponent {
   
   @Input() users: any[];
+  
+  formatStargazerCount(user: any) {
+    if (user.total_repos >= 100) { return `${user.total_stargazers} +`; }
+    return user.total_stargazers > 0 ? user.total_stargazers : 0;
+  }
 
 }

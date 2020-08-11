@@ -59,11 +59,6 @@ export class AppComponent {
     if (count > 1000) { return `1000 available / ${count} results`; }
     return `${count} results`;
   }
-  
-  formatStargazerCount(user: any) {
-    if (user.total_repos >= 100) { return `${user.total_stargazers} +`; }
-    return user.total_stargazers > 0 ? user.total_stargazers : 0;
-  }
 
 
 }
